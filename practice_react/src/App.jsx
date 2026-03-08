@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Profile from "./components/Profile"
 import Props_with_Button_Function from "./components/Props_with_Button_Function"
 import Props_with_Image from "./components/Props_with_Image"
+import Tailwind from "./components/Tailwind"
 import Card from "./components/card"
 const App = () => {
   const showAlert = ()=>{
@@ -12,7 +13,8 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <div className="parent">
-      <Array_of_object />
+      <Tailwind />
+      {/* <Array_of_object /> */}
        {/* {arr.map(item => <h2>{item}</h2>)} */}
       {/* <h1>hello</h1> */}
       {/* <Props_with_Button_Function text="click me la la la " handleClick={showAlert}/>
