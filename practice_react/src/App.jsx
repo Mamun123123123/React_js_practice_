@@ -7,6 +7,7 @@ import Props_with_Image from "./components/Props_with_Image"
 import Tailwind from "./components/Tailwind"
 import Card from "./components/card"
 import Nav from "./components1/Nav"
+import Section1 from "./components1/section_1/Section1"
 const App = () => {
   const showAlert = ()=>{
        alert("click korne ke liye donnobad")
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <>
     <Nav />
+    <Section1 />
     
     
     
