@@ -6,14 +6,21 @@ import Props_with_Button_Function from "./components/Props_with_Button_Function"
 import Props_with_Image from "./components/Props_with_Image"
 import Tailwind from "./components/Tailwind"
 import Card from "./components/card"
+import Nav from "./components1/Nav"
 const App = () => {
   const showAlert = ()=>{
        alert("click korne ke liye donnobad")
   }
   const arr = [10,20,30,40]
   return (
-    <div className="parent">
-      <Tailwind />
+    <>
+    <Nav />
+    
+    
+    
+    
+     <div className="parent">
+      {/* <Tailwind /> */}
       {/* <Array_of_object /> */}
        {/* {arr.map(item => <h2>{item}</h2>)} */}
       {/* <h1>hello</h1> */}
@@ -24,6 +31,8 @@ const App = () => {
        {/* <Card user='props worked'/> */}
        {/* <Profile name="Abdullah Al Mamun" age={200} city="Dhaka" /> */} 
     </div>
+    </>
+   
   )
 }
 
