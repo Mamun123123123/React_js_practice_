@@ -8,6 +8,7 @@ import Props_with_Button_Function from "./components/Props_with_Button_Function"
 import Props_with_Image from "./components/Props_with_Image"
 import Tailwind from "./components/Tailwind"
 import UseState from "./components/UseState"
+import UseState_arr from "./components/UseState_arr"
 import Card from "./components/card"
 import Nav from "./components1/Nav"
 import Section1 from "./components1/section_1/Section1"
@@ -19,8 +20,8 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <UseState />
-    
+    <UseState_arr />
+
     {/* <Function /> */}
     {/* <Hiring /> */}
 
