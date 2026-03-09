@@ -8,6 +8,7 @@ import Tailwind from "./components/Tailwind"
 import Card from "./components/card"
 import Nav from "./components1/Nav"
 import Section1 from "./components1/section_1/Section1"
+import Section2 from "./components1/section_2/Section2"
 const App = () => {
   const showAlert = ()=>{
        alert("click korne ke liye donnobad")
@@ -17,6 +18,7 @@ const App = () => {
     <>
     <Nav />
     <Section1 />
+    <Section2 />
     
     
     
