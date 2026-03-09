@@ -1,5 +1,6 @@
 import Array_of_object from "./components/Array_of_object"
 import Card_multiple from "./components/Card_multiple"
+import Hiring from "./components/Hiring"
 import Navbar from "./components/Navbar"
 import Profile from "./components/Profile"
 import Props_with_Button_Function from "./components/Props_with_Button_Function"
@@ -16,9 +17,18 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <Nav />
+    <Hiring />
+
+
+
+
+
+
+
+
+    {/* <Nav />
     <Section1 />
-    <Section2 />
+    <Section2 /> */}
     
     
     
