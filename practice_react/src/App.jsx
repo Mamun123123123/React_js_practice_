@@ -1,4 +1,5 @@
 import Note_app from "./Project1/Note_app"
+import Image_galary from "./Project2/Image_galary"
 import Array_of_object from "./components/Array_of_object"
 import Axios_ from "./components/Axios_"
 import Card_multiple from "./components/Card_multiple"
@@ -13,6 +14,7 @@ import Profile from "./components/Profile"
 import Props_with_Button_Function from "./components/Props_with_Button_Function"
 import Props_with_Image from "./components/Props_with_Image"
 import Tailwind from "./components/Tailwind"
+import UseEffect from "./components/UseEffect"
 import UseState from "./components/UseState"
 import UseState_arr from "./components/UseState_arr"
 import Card from "./components/card"
@@ -26,7 +28,7 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <Axios_ />
+    <Image_galary />
     {/* <Note_app /> */}
     {/* <Form_handling /> */}
     {/* <UseState_arr /> */}
