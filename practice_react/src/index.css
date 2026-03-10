@@ -12,6 +12,10 @@
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
+body{
+  background-color: black;
+  color: white;
+}
 .card {
     background-color: blueviolet;
     padding: 10px;
