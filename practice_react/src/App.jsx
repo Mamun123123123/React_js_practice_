@@ -3,6 +3,7 @@ import Card_multiple from "./components/Card_multiple"
 import Function from "./components/Function"
 import Hiring from "./components/Hiring"
 import Navbar from "./components/Navbar"
+import Problem1 from "./components/Problem1"
 import Profile from "./components/Profile"
 import Props_with_Button_Function from "./components/Props_with_Button_Function"
 import Props_with_Image from "./components/Props_with_Image"
@@ -20,7 +21,8 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <UseState_arr />
+    <Problem1 />
+    {/* <UseState_arr /> */}
 
     {/* <Function /> */}
     {/* <Hiring /> */}
