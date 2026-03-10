@@ -1,3 +1,4 @@
+import Note_app from "./Project1/Note_app"
 import Array_of_object from "./components/Array_of_object"
 import Card_multiple from "./components/Card_multiple"
 import Form_handling from "./components/Form_handling"
@@ -24,7 +25,8 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <Form_handling />
+    <Note_app />
+    {/* <Form_handling /> */}
     {/* <UseState_arr /> */}
 
     {/* <Function /> */}
