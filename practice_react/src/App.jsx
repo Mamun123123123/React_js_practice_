@@ -1,5 +1,6 @@
 import Array_of_object from "./components/Array_of_object"
 import Card_multiple from "./components/Card_multiple"
+import Form_handling from "./components/Form_handling"
 import Function from "./components/Function"
 import Hiring from "./components/Hiring"
 import Navbar from "./components/Navbar"
@@ -23,7 +24,7 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <Problem3 />
+    <Form_handling />
     {/* <UseState_arr /> */}
 
     {/* <Function /> */}
