@@ -5,6 +5,7 @@ import Hiring from "./components/Hiring"
 import Navbar from "./components/Navbar"
 import Problem1 from "./components/Problem1"
 import Problem2 from "./components/Problem2"
+import Problem3 from "./components/Problem3"
 import Profile from "./components/Profile"
 import Props_with_Button_Function from "./components/Props_with_Button_Function"
 import Props_with_Image from "./components/Props_with_Image"
@@ -22,7 +23,7 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <Problem2 />
+    <Problem3 />
     {/* <UseState_arr /> */}
 
     {/* <Function /> */}
