@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { UserContext } from '../Context/Context'
 
 const About = () => {
+   const {name} = useContext(UserContext)
     let navigate = useNavigate()
   return (
     <div>
-       <h1>About Page..............</h1>
+       <h1>{name} Page..............</h1>
        <button onClick={()=>{
         navigate('/')
        }}>Back to Home</button>

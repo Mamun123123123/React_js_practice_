@@ -26,6 +26,8 @@ import { Routes,Route } from "react-router-dom"
 import Home from "./Pages/Home"
 import Contact from "./Pages/Contact"
 import About from "./Pages/About"
+import Name from "./Context/Name"
+import { UserProvider } from "./Context/Context"
 const App = () => {
   const showAlert = ()=>{
        alert("click korne ke liye donnobad")
@@ -33,13 +35,18 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-      <NavBer />
+      <UserProvider>
+        <Name />
+        <About />
+      </UserProvider>
+     
+      {/* <NavBer />
       <Routes>
         <Route path='/' element = {<Home />} />
         <Route path='/about' element = {<About />} />
         <Route path='/contact' element = {<Contact />} />
          
-      </Routes>
+      </Routes> */}
 
 
 
