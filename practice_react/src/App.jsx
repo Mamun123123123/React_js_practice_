@@ -1,3 +1,4 @@
+import NavBer from "./Pages/NavBer"
 import Note_app from "./Project1/Note_app"
 import Image_galary from "./Project2/Image_galary"
 import Array_of_object from "./components/Array_of_object"
@@ -21,6 +22,10 @@ import Card from "./components/card"
 import Nav from "./components1/Nav"
 import Section1 from "./components1/section_1/Section1"
 import Section2 from "./components1/section_2/Section2"
+import { Routes,Route } from "react-router-dom"
+import Home from "./Pages/Home"
+import Contact from "./Pages/Contact"
+import About from "./Pages/About"
 const App = () => {
   const showAlert = ()=>{
        alert("click korne ke liye donnobad")
@@ -28,7 +33,17 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <Image_galary />
+      <NavBer />
+      <Routes>
+        <Route path='/' element = {<Home />} />
+        <Route path='/about' element = {<About />} />
+        <Route path='/contact' element = {<Contact />} />
+         
+      </Routes>
+
+
+
+    {/* <Image_galary /> */}
     {/* <Note_app /> */}
     {/* <Form_handling /> */}
     {/* <UseState_arr /> */}
