@@ -5,16 +5,39 @@ const Login = () => {
         username: '',
         password: ''
     })
+    const [idits,setIdits] = useState(null)
     const [data, setData] = useState([])
     const formHandler = (e) => {
         e.preventDefault()
+        if(idits !== null){
+          const newData = [...data]
+          newData.splice(idits,1,inputs)
+          console.log(newData);
+          
+          setData(newData)
+          setIdits('')
+        }else{
         setData([ ...data, inputs])
+        }
         setInputs(
             {
                 username:'',
                 password:''
             }
         )
+    }
+    const idit = (idx) => {
+        setInputs(data[idx])
+        setIdits(idx)
+        
+        
+    }
+    const delet = (idx) => {
+         console.log(idx);
+         const allData = [...data]
+         allData.splice(idx,1)
+         setData(allData)
+         
     }
     return (
         <>
@@ -56,8 +79,13 @@ const Login = () => {
                 <ol>
                     {
                         data.map((item,idx)=>{
-                            return <li className='border p-2  m-2' key={idx}>
+                            return <li className='border tracking-wider p-2  m-2 flex  justify-between gap-4' key={idx}>
                                <h3>{idx+1}. UserName : {item.username} - Password : {item.password}</h3>
+                               <div className='flex gap-4 '>
+                                <button onClick={()=> idit(idx)} className='border leading-1.5 p-2 uppercase rounded-lg bg-blue-600 text-white'>Edit</button>
+                                <button onClick={()=>delet(idx)} className='border leading-1.5 p-2 uppercase rounded-lg bg-red-600 text-white'>Delete</button>
+                               </div>
+                               
                             </li>
                         })
                     }
