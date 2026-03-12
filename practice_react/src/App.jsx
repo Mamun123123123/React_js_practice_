@@ -32,6 +32,8 @@ import Login from "./components/Login"
 import Use_Effect from "./components/Use_Effect"
 import { SetContext, SetContext_Provider } from "./Context1/Create_context"
 import Use from "./Context1/Use"
+import Food from "./Project3/Food"
+
 const App = () => {
   const showAlert = ()=>{
        alert("click korne ke liye donnobad")
@@ -39,9 +41,11 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-    <SetContext_Provider>
+
+    <Food />
+    {/* <SetContext_Provider>
       <Use />
-    </SetContext_Provider>
+    </SetContext_Provider> */}
       {/* <Use_Effect />  */}
       {/* <Login /> */}
       {/* <UserProvider>
