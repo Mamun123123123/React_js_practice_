@@ -28,6 +28,7 @@ import Contact from "./Pages/Contact"
 import About from "./Pages/About"
 import Name from "./Context/Name"
 import { UserProvider } from "./Context/Context"
+import Login from "./components/Login"
 const App = () => {
   const showAlert = ()=>{
        alert("click korne ke liye donnobad")
@@ -35,10 +36,11 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-      <UserProvider>
+      <Login />
+      {/* <UserProvider>
         <Name />
         <About />
-      </UserProvider>
+      </UserProvider> */}
      
       {/* <NavBer />
       <Routes>
