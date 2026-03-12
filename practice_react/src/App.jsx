@@ -29,6 +29,7 @@ import About from "./Pages/About"
 import Name from "./Context/Name"
 import { UserProvider } from "./Context/Context"
 import Login from "./components/Login"
+import Use_Effect from "./components/Use_Effect"
 const App = () => {
   const showAlert = ()=>{
        alert("click korne ke liye donnobad")
@@ -36,7 +37,8 @@ const App = () => {
   const arr = [10,20,30,40]
   return (
     <>
-      <Login />
+      <Use_Effect /> 
+      {/* <Login /> */}
       {/* <UserProvider>
         <Name />
         <About />
