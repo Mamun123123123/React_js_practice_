@@ -19,13 +19,10 @@ import UseEffect from "./components/UseEffect"
 import UseState from "./components/UseState"
 import UseState_arr from "./components/UseState_arr"
 import Card from "./components/card"
-import Nav from "./components1/Nav"
+
 import Section1 from "./components1/section_1/Section1"
 import Section2 from "./components1/section_2/Section2"
 import { Routes,Route } from "react-router-dom"
-import Home from "./Pages/Home"
-import Contact from "./Pages/Contact"
-import About from "./Pages/About"
 import Name from "./Context/Name"
 import { UserProvider } from "./Context/Context"
 import Login from "./components/Login"
@@ -34,6 +31,10 @@ import { SetContext, SetContext_Provider } from "./Context1/Create_context"
 import Use from "./Context1/Use"
 import Food from "./Project3/Food"
 import Fetch_url from "./components/Fetch_url"
+import Home from "./personal/Home"
+import About from "./personal/About"
+import Contact from "./personal/Contact"
+import Nav from "./personal/Nav"
 
 
 const App = () => {
@@ -44,7 +45,13 @@ const App = () => {
   // const arr = [10,20,30,40]
   return (
     <>
-    <Fetch_url />
+     <Nav />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />}/>
+    </Routes>
+    {/* <Fetch_url /> */}
     {/* <Food /> */}
     {/* <SetContext_Provider>
       <Use />
