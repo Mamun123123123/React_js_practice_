@@ -35,6 +35,7 @@ import Home from "./personal/Home"
 import About from "./personal/About"
 import Contact from "./personal/Contact"
 import Nav from "./personal/Nav"
+import Photos from "./personal/Photos"
 
 
 const App = () => {
@@ -50,6 +51,8 @@ const App = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />}/>
+      <Route path="/photo" element={<Photos />}/>
+
     </Routes>
     {/* <Fetch_url /> */}
     {/* <Food /> */}
