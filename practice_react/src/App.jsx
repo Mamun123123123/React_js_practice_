@@ -36,6 +36,7 @@ import About from "./personal/About"
 import Contact from "./personal/Contact"
 import Nav from "./personal/Nav"
 import Photos from "./personal/Photos"
+import Country from "./Project4/Country"
 
 
 const App = () => {
@@ -46,14 +47,15 @@ const App = () => {
   // const arr = [10,20,30,40]
   return (
     <>
-     <Nav />
+    <Country />
+     {/* <Nav />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />}/>
       <Route path="/photo" element={<Photos />}/>
 
-    </Routes>
+    </Routes> */}
     {/* <Fetch_url /> */}
     {/* <Food /> */}
     {/* <SetContext_Provider>
