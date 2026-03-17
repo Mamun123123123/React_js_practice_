@@ -4,11 +4,12 @@ import React, { useEffect, useState } from 'react'
 const Country = () => {
      const [data,setData] = useState([])
      const [currentPage, setCurrentPage] = useState(1);
-
      const itemsPerPage = 12;
+     const change = (e) =>{
+        e.target.textContent = "Visited"
+     }
      const allCountry = async()=>{
       let response = await axios.get("https://openapi.programming-hero.com/api/all")
-      console.log(response.data.countries);
       setData(response.data.countries)
      }
      useEffect(()=>{
@@ -26,8 +27,8 @@ const Country = () => {
                 <h1 className='text-2xl tracking-widest'>{item.name.common}</h1>
                 <h2 className='font-extralight'>{item.region.region}</h2>
                 <div className='flex sm:gap-6 m-3'>
-                <button className='border p-1 m-1 rounded-xl tracking-wider w-18 bg-amber-100 '>visit</button>
-                <button className='border p-1 m-1 rounded-xl tracking-wider w-29 bg-amber-100 '>flag visit</button>
+                <button onClick={change} className='border p-1 m-1 rounded-xl tracking-wider w-28 bg-amber-100 '>not visit</button>
+                <button  className='border p-1 m-1 rounded-xl tracking-wider w-29 bg-amber-100 '>flag visit</button>
                 </div>
             </div>
                 
