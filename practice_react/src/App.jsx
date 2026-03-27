@@ -37,6 +37,7 @@ import Contact from "./personal/Contact"
 import Nav from "./personal/Nav"
 import Photos from "./personal/Photos"
 import Country from "./Project4/Country"
+import Players from "./Dream_BPL_11/Players"
 
 
 const App = () => {
@@ -47,7 +48,8 @@ const App = () => {
   // const arr = [10,20,30,40]
   return (
     <>
-    <Country />
+    <Players />
+    {/* <Country /> */}
      {/* <Nav />
     <Routes>
       <Route path="/" element={<Home />} />

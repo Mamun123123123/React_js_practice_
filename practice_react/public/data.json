@@ -1,0 +1,102 @@
+[
+  {
+    "playername": "Virat Kohli",
+    "playercountry": "India",
+    "playertype": "Batsman",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm medium",
+    "rating": 95,
+    "price": 1500000,
+    "img": "https://example.com/images/virat_kohli.jpg"
+  },
+  {
+    "playername": "Babar Azam",
+    "playercountry": "Pakistan",
+    "playertype": "Batsman",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm offbreak",
+    "rating": 92,
+    "price": 1400000,
+    "img": "https://example.com/images/babar_azam.jpg"
+  },
+  {
+    "playername": "Ben Stokes",
+    "playercountry": "England",
+    "playertype": "All-rounder",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm fast-medium",
+    "rating": 90,
+    "price": 1450000,
+    "img": "https://example.com/images/ben_stokes.jpg"
+  },
+  {
+    "playername": "Shakib Al Hasan",
+    "playercountry": "Bangladesh",
+    "playertype": "All-rounder",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Left-arm orthodox",
+    "rating": 91,
+    "price": 1300000,
+    "img": "https://example.com/images/shakib.jpg"
+  },
+  {
+    "playername": "Kane Williamson",
+    "playercountry": "New Zealand",
+    "playertype": "Batsman",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm offbreak",
+    "rating": 89,
+    "price": 1350000,
+    "img": "https://example.com/images/williamson.jpg"
+  },
+  {
+    "playername": "David Warner",
+    "playercountry": "Australia",
+    "playertype": "Batsman",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "Right-arm legbreak",
+    "rating": 88,
+    "price": 1250000,
+    "img": "https://example.com/images/warner.jpg"
+  },
+  {
+    "playername": "Jasprit Bumrah",
+    "playercountry": "India",
+    "playertype": "Bowler",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Right-arm fast",
+    "rating": 93,
+    "price": 1400000,
+    "img": "https://example.com/images/bumrah.jpg"
+  },
+  {
+    "playername": "Trent Boult",
+    "playercountry": "New Zealand",
+    "playertype": "Bowler",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "Left-arm fast-medium",
+    "rating": 87,
+    "price": 1200000,
+    "img": "https://example.com/images/boult.jpg"
+  },
+  {
+    "playername": "Jos Buttler",
+    "playercountry": "England",
+    "playertype": "Wicketkeeper-Batsman",
+    "battingstyle": "Right-hand bat",
+    "bowlingstyle": "None",
+    "rating": 91,
+    "price": 1380000,
+    "img": "https://example.com/images/buttler.jpg"
+  },
+  {
+    "playername": "Quinton de Kock",
+    "playercountry": "South Africa",
+    "playertype": "Wicketkeeper-Batsman",
+    "battingstyle": "Left-hand bat",
+    "bowlingstyle": "None",
+    "rating": 89,
+    "price": 1320000,
+    "img": "https://example.com/images/dekock.jpg"
+  }
+]
