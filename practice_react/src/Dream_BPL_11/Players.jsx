@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Available from './Available'
+import Selected from './Selected'
 
 const Players = () => {
   const [data, setData] = useState([])
@@ -27,7 +28,7 @@ const Players = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         
         {data.map((item, index) => (
-            selecttype === "available" ?  <Available key={index} item ={item}/> : "none"
+            selecttype === "available" ?  <Available key={index} item ={item}/> : <Selected />
         ))}
 
       </div>

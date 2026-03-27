@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Available = ({item}) => {
+  const [selected,setSelected] = useState(false)
   return (
     <>
     <div 
@@ -34,8 +35,8 @@ const Available = ({item}) => {
                 ${item.price}
               </p>
 
-              <button className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm">
-                Choose
+              <button className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg text-sm" onClick={()=>setSelected(true)}>
+                {selected === true ? "Selected" : "Choose player"}
               </button>
             </div>
 
