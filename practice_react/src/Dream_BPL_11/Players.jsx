@@ -5,6 +5,7 @@ import Selected from './Selected'
 
 const Players = () => {
   const [data, setData] = useState([])
+  const [selected_data,setSelected_Data] = useState([])
  const [selecttype,setSelecttype] = useState("available")
   const players_data_fetch = async () => {
     let response = await axios.get("/data.json")
@@ -27,9 +28,19 @@ const Players = () => {
         </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         
-        {data.map((item, index) => (
-            selecttype === "available" ?  <Available key={index} item ={item}/> : <Selected />
-        ))}
+         {selecttype === "available"
+          ? data.map((item, index) => (
+              <Available
+                key={index}
+                item={item}
+                selected_data={selected_data}
+                setSelected_Data={setSelected_Data}
+              />
+            ))
+          : (
+              <Selected selected_data={selected_data} />
+            )
+        }
 
       </div>
     </div>
