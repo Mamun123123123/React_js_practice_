@@ -38,6 +38,7 @@ import Nav from "./personal/Nav"
 import Photos from "./personal/Photos"
 import Country from "./Project4/Country"
 import Players from "./Dream_BPL_11/Players"
+import Form_office from "./Practice/Form_office"
 
 
 const App = () => {
@@ -48,7 +49,7 @@ const App = () => {
   // const arr = [10,20,30,40]
   return (
     <>
-    <Players />
+    {/* <Players /> */}
     {/* <Country /> */}
      {/* <Nav />
     <Routes>
@@ -90,7 +91,7 @@ const App = () => {
 
 
 
-
+      <Form_office />
 
 
 
